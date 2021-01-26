@@ -2,12 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const CoinCard = ({ coin, removeCoin }) => {
+  console.log("this is bitcoin", coin)
   return (
     <Link to={`/coins/${coin.id}`} className="text-decoration-none my-1 coin">
       <li className="coinList-item list-group-item list-group-item-action d-flex justify-content-between align-items-center text-dark">
         <h3>{coin.name}</h3>
         <img className="coinList-image" src={coin.image} alt="" />
-        <span className="text-decoration-non">{coin.Current_price}</span>
+        <span className="text-decoration-non">{coin.current_price}</span>
 
         {/*below is what shows our Percentage  and down or upward arrow */}
 

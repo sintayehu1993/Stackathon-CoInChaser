@@ -3,7 +3,7 @@ export const timeLineOptions = {
     lineHeightAnnotation: {
       always: true,
       hover: false,
-      lineWeight: 1.5,
+      lineWeight: 2,
     },
   
     animation: {

@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { WatchList } from '../context/watchList';
-import CoinApi from '../apis/CoinApi'
+// import CoinApi from '../apis/CoinApi'
 
 const AddCoin = () => {
   const [isActive, setIsActive] = useState(false);

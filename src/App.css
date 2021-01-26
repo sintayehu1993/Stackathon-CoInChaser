@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -7,25 +6,26 @@
 }
 
 body {
-  background-color: white;
+  background-color: black;
 }
 
 ul {
   list-style: none;
 }
 
-.coinlist-image {
+.coinList-image {
   width: 50px;
 }
 
-.coinlist-item {
+.coinList-item {
   display: flex;
 }
 
 .coinsummary {
   border-color: rebeccapurple !important;
   border-style: outset !important;
-  background-color: olivedrab ;
+  background-color: lightblue;
+  border-radius: 50%;
 }
 
 .coin-data-category {
@@ -40,4 +40,14 @@ ul {
 
 .coin:hover .delete-icon {
   display: block;
+}
+.particles_canvas {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+}
+
+.typed_text {
+  color: aliceblue;
 }

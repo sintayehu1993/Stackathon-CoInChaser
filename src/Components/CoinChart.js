@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Chart from 'chart.js';
 import { timeLineOptions } from '../charFile/ChartSetUp';
-import { Redirect } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 function CoinChart({ data }) {
   const chartGraphColorGenerator = () => {
@@ -38,7 +38,7 @@ function CoinChart({ data }) {
           //Bring in data
           datasets: [
             {
-              label: `${detail.name} price`,
+              label: `${detail.name} Price`,
               data: chooseTimeFormat(),
               backgroundColor: `${chartGraphColorGenerator()}`,
               borderColor: `${chartGraphColorGenerator()}`,
@@ -52,14 +52,18 @@ function CoinChart({ data }) {
       });
     }
   });
-  const renderToHomeHandler = () => {
-    return <Redirect to="/" />;
+  const history = useHistory();
+
+  ///this reDi
+  const routeChangeToHome = () => {
+    let path = `/`;
+    history.push(path);
   };
   const renderPrice = () => {
     if (detail) {
       return (
         <div>
-          <p className="my-0">${detail.current_price.toFixed(2)}</p>
+          <p className="bg-white my-0">${detail.current_price.toFixed(2)}</p>
           <p
             className={
               detail.price_change_24h < 0
@@ -86,7 +90,7 @@ function CoinChart({ data }) {
           height={250}
         ></canvas>
       </div>
-      <div className="row-md-6">
+      <div className="bg-white row-md-6">
         <button
           type="button"
           className="btn form-control"
@@ -121,9 +125,9 @@ function CoinChart({ data }) {
         </button>
         <button
           type="button"
-          className="btn form-control"
+          className="bg-red form-control"
           id="btn5"
-          onClick={() => renderToHomeHandler()}
+          onClick={routeChangeToHome}
         >
           HOME
         </button>
