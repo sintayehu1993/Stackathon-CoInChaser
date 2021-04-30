@@ -4,24 +4,15 @@ export const WatchList = createContext();
 
 // we use this function so our useState function don't run many times it renders
 
-// function initialArrayOfCoins() {
-//   console.log('run function');
-//   return (
-//     localStorage.getItem('watchList').split(",") || [
-//       'bitcoin',
-//       'ethereum',
-//       'litecoin',
-//       'cardano',
-//     ]
-//   );
-// }
 export const WatchListProvider = (props) => {
-  const [watchList, setwatchList] = useState(localStorage.getItem('watchList').split(",") || [
-    'bitcoin',
-    'ethereum',
-    'litecoin',
-    'cardano',
-  ]);
+  const [watchList, setwatchList] = useState(
+    localStorage.getItem('watchList') !==null .split(',') || [
+      'bitcoin',
+      'ethereum',
+      'litecoin',
+      'cardano',
+    ]
+  );
 
   useEffect(() => {
     localStorage.setItem('watchList', watchList);
@@ -47,4 +38,5 @@ export const WatchListProvider = (props) => {
     </WatchList.Provider>
   );
 };
+
 // export default WatchListProvider
