@@ -27,7 +27,7 @@ const CoinList = () => {
     if (watchList.length > 0) {
       fetchDate();
     } else {
-      setCoins([])
+      setCoins([]);
     }
   }, [watchList]);
   const renderCoins = () => {
@@ -35,17 +35,20 @@ const CoinList = () => {
       return <div>Loading...</div>;
     } else {
       return (
-        <ul className="coinList list-group mt-2">
-          {coins.map((coin) => {
-            return (
-              <CoinCard
-                key={coin.id}
-                coin={coin}
-                removeCoin={removeCoinHandler}
-              />
-            );
-          })}
-        </ul>
+        <>
+          <h1 className="text-center"> Watch List </h1>
+          <ul className=" coinList list-group mt-2">
+            {coins.map((coin) => {
+              return (
+                <CoinCard
+                  key={coin.id}
+                  coin={coin}
+                  removeCoin={removeCoinHandler}
+                />
+              );
+            })}
+          </ul>
+        </>
       );
     }
   };

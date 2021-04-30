@@ -4,6 +4,7 @@ import { timeLineOptions } from '../charFile/ChartSetUp';
 import { useHistory } from 'react-router-dom';
 
 function CoinChart({ data }) {
+  // random color generator
   const chartGraphColorGenerator = () => {
     let x = Math.floor(Math.random() * 256);
     let y = Math.floor(Math.random() * 256);

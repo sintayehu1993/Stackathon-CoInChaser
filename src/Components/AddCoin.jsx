@@ -7,11 +7,12 @@ const AddCoin = () => {
   const { addCoin } = useContext(WatchList);
 //   make sure to come back and use an api to generate all coins that should be available...
 
-//   const availableCoinsForNOww = async () => {
-//     const response = await CoinApi.get("/coins/list")
-//     console.log("this is all data", response.data)
-//     return 
-//   }
+  // const availableCoinsForNOww = async () => {
+  //   const response = await CoinApi.get("/coins/list")
+  //   console.log("this is all data", response.data)
+  //   return 
+  // }
+
   const availableCoinsForNOw = [
     'bitcoin',
     'ethereum',

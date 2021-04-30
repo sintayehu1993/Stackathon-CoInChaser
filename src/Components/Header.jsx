@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, Redirect, Route } from 'react-router-dom';
 import Typed from 'react-typed';
-//💸 💰 💸 💰 💸 💰 💸 💰  🏃 🏃 🏃 🏃 🏃
+//💸 💰 💸 💰 💸 💰 💸 💰  🏃 🏃 🏃 🏃 🏃 :watch: :grinning:
 const Header = (props) => {
   console.log('this is props', props);
   return (
