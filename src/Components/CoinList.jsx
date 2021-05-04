@@ -36,7 +36,7 @@ const CoinList = () => {
     } else {
       return (
         <>
-          <h1 className="text-center"> Watch List </h1>
+          <h1 className="text-center"> Watchlist </h1>
           <ul className=" coinList list-group mt-2">
             {coins.map((coin) => {
               return (

@@ -2,8 +2,6 @@ import React, { createContext, useEffect, useState } from 'react';
 
 export const WatchList = createContext();
 
-// we use this function so our useState function don't run many times it renders
-
 export const WatchListProvider = (props) => {
   const [watchList, setwatchList] = useState(
     localStorage.getItem('watchList').split(',') || [
@@ -13,7 +11,6 @@ export const WatchListProvider = (props) => {
       'cardano',
     ]
   );
-
   useEffect(() => {
     localStorage.setItem('watchList', watchList);
   }, [watchList]);
