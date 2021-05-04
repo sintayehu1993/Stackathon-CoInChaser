@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Stackathon-CoInChaser/static/css/main.3f7bbf81.chunk.css",
+    "main.js": "/Stackathon-CoInChaser/static/js/main.689d0056.chunk.js",
+    "main.js.map": "/Stackathon-CoInChaser/static/js/main.689d0056.chunk.js.map",
+    "runtime-main.js": "/Stackathon-CoInChaser/static/js/runtime-main.cde94b80.js",
+    "runtime-main.js.map": "/Stackathon-CoInChaser/static/js/runtime-main.cde94b80.js.map",
+    "static/js/2.386cb710.chunk.js": "/Stackathon-CoInChaser/static/js/2.386cb710.chunk.js",
+    "static/js/2.386cb710.chunk.js.map": "/Stackathon-CoInChaser/static/js/2.386cb710.chunk.js.map",
+    "index.html": "/Stackathon-CoInChaser/index.html",
+    "static/css/main.3f7bbf81.chunk.css.map": "/Stackathon-CoInChaser/static/css/main.3f7bbf81.chunk.css.map",
+    "static/js/2.386cb710.chunk.js.LICENSE.txt": "/Stackathon-CoInChaser/static/js/2.386cb710.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cde94b80.js",
+    "static/js/2.386cb710.chunk.js",
+    "static/css/main.3f7bbf81.chunk.css",
+    "static/js/main.689d0056.chunk.js"
+  ]
+}
