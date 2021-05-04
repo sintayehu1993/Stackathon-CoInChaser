@@ -5,10 +5,6 @@ export const WatchList = createContext();
 export const WatchListProvider = (props) => {
   const [watchList, setwatchList] = useState(
     localStorage.getItem('watchList').split(',') || [
-      'bitcoin',
-      'ethereum',
-      'litecoin',
-      'cardano',
     ]
   );
   useEffect(() => {
@@ -21,6 +17,7 @@ export const WatchListProvider = (props) => {
       })
     );
   };
+  console.log('what is watch list now', watchList)
   const addCoin = (coin) => {
     // if we pass in a coin that is not on the list, it will give us a -1
     if (watchList.indexOf(coin) === -1) {
